@@ -43,6 +43,7 @@ axes_left  = plt.subplot(121)
 
 # Keep only top and right spines
 axes_left.spines['left'].set_color('none')
+axes_left.spines['right'].set_zorder(10)
 axes_left.spines['bottom'].set_color('none')
 axes_left.xaxis.set_ticks_position('top')
 axes_left.yaxis.set_ticks_position('right')
@@ -93,11 +94,13 @@ axes_right = plt.subplot(122, sharey=axes_left)
 
 # Keep only top and left spines
 axes_right.spines['right'].set_color('none')
+axes_right.spines['left'].set_zorder(10)
 axes_right.spines['bottom'].set_color('none')
 axes_right.xaxis.set_ticks_position('top')
 axes_right.yaxis.set_ticks_position('left')
 axes_right.spines['top'].set_position(('data',len(diseases)+.25))
 axes_right.spines['top'].set_color('w')
+
 
 # Set axes limits
 plt.xlim(0,200000)
