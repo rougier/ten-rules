@@ -86,7 +86,7 @@ axes_left.grid()
 
 plt.text(165000,8.2,"Leading Causes\nOf Cancer Deaths", fontsize=18,va="top")
 plt.text(165000,7,"""In 2007, there were more\n"""
-                  """than 1.4 millions of new cases\n"""
+                  """than 1.4 million new cases\n"""
                   """of cancer in the United States.""", va="top", fontsize=10)
 
 # --- MEN data ---

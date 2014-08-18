@@ -11,11 +11,11 @@ do
     epsfile=$file.eps
     tiffile=$file.tiff
 
-    # echo "Cropping $pdffile"
-    # pdfcrop $pdffile $pdffile
+    echo "Cropping $pdffile"
+    pdfcrop $pdffile $pdffile
 
-    # echo "Converting $pdffile -> $epsfile"
-    #pdf2ps  $pdffile $epsfile
+    echo "Converting $pdffile -> $epsfile"
+    pdf2ps  $pdffile $epsfile
 
     echo "Converting $pdffile -> $tiffile"
     convert -density 300x300 -compress lzw $pdffile $tiffile
