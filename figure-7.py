@@ -34,10 +34,10 @@ for i in range(p):
     plt.axvline(.25*p, (Yy[i]-.375)/p, (Yy[i]+.375)/p, c='.5', lw=.5, zorder=-15)
     plt.axvline(.50*p, (Yy[i]-.375)/p, (Yy[i]+.375)/p, c='.5', lw=.5, zorder=-15)
     plt.axvline(.75*p, (Yy[i]-.375)/p, (Yy[i]+.375)/p, c='.5', lw=.5, zorder=-15)
-    plt.plot(X*p/2, i+.5+2*Y[i]/p, c='k', lw=2)
+    plt.plot(X*p/2, i+.5+2*Y[p-1-i]/p, c='k', lw=2)
     for j in range(p):
         if i != j:
-            plt.plot(X*p/2, i+.5+2*Y[j]/p, c='.5', lw=.5, zorder=-10)
+            plt.plot(X*p/2, i+.5+2*Y[p-1-j]/p, c='.5', lw=.5, zorder=-10)
 plt.text(.25*p, 0, "0.5", va = "top", ha="center", fontsize=10)
 plt.text(.50*p, 0, "1.0", va = "top", ha="center", fontsize=10)
 plt.text(.75*p, 0, "1.5", va = "top", ha="center", fontsize=10)
